@@ -2,6 +2,7 @@ apt.py
 ======
 
 A wrapper for `apt` for more convenient searching and installing packages.
+It is inpired by [yay](https://github.com/Jguer/yay) for pacman (Arch Linux).
 
 ```
 > apt.py curl
