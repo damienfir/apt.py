@@ -78,3 +78,5 @@ except KeyboardInterrupt:
 
 
 # TODO: show if already installed
+# TODO: basic tests
+# TODO: handle sudo properly
