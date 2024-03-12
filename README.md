@@ -36,8 +36,20 @@ Packages to install: 1
 Building
 --------
 
+If necessary, install dependencies in `requirements.txt`.
+
 ```
 make
 ```
 
 The executable will be in the `dist` folder.
+
+
+Installing
+----------
+
+```
+make install
+```
+
+The PREFIX defaults to `$HOME/.local`.
