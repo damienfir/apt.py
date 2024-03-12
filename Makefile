@@ -1,11 +1,8 @@
-PREFIX=${HOME}/.local
-EXE=dist/apt.py/apt.py
+EXE=apt.py
+DIST=dist/$(EXE)
 
-$(EXE): apt.py
-	pyinstaller --name apt.py $<
+$(DIST): apt.py
+	pyinstaller --onefile --noconfirm --name $(EXE) $<
 
 clean:
 	rm -r dist build apt.py.spec
-
-install: $(EXE)
-	cp $(EXE) $(PREFIX)/bin/
